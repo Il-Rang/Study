@@ -89,11 +89,11 @@
 
 #=========================================================
 
-# for i in range(1, 10):
-#     print(f"구구단 {i}단:")
-#     for j in range(1, 10):
-#         print(f'{i} * {j} = {i * j}')
-#     print()
+for i in range(1, 10):
+    print(f"구구단 {i}단:")
+    for j in range(1, 10):
+        print(f'{i} * {j} = {i * j}')
+    print()
 
 #=========================================================
 
@@ -113,18 +113,18 @@
     
 #=========================================================
 
-import secrets as scs
+# import secrets as scs
 
-r = 0
+# r = 0
 
-while True:
-    r += 1
-    num = int(input(f"{r}회 시행중 - 컴퓨터가 생각한 숫자는? "))
-    c_num = scs.randbelow(5) + 1
-    if num == c_num:
-        print("맞혔습니다. 축하합니다.")
-        break
-    else:
-        print(f"아쉽네요. 정답은 {c_num}이었습니다.")
+# while True:
+#     r += 1
+#     num = int(input(f"{r}회 시행중 - 컴퓨터가 생각한 숫자는? "))
+#     c_num = scs.randbelow(5) + 1
+#     if num == c_num:
+#         print("맞혔습니다. 축하합니다.")
+#         break
+#     else:
+#         print(f"아쉽네요. 정답은 {c_num}이었습니다.")
 
-print("게임을 마칩니다.")
+# print("게임을 마칩니다.")
