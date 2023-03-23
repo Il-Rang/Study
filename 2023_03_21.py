@@ -124,7 +124,7 @@ for i in range(10):
     c_num = scs.randbelow(5) + 1
     if num == c_num:
         print("맞혔습니다. 축하합니다.")
-        # break
+        break
     else:
         print(f"아쉽네요. 정답은 {c_num}이었습니다.")
 
