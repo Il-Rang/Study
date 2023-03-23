@@ -30,25 +30,23 @@
 # print(f'1부터 {n}까지의 합 = {sum}')
 
 #===========================================================
-# # 4번 과제
+# 4번 과제
 
-# n1 = int(input("숫자 입력 : "))
-# n2 = int(input("배수 입력 : "))
-# n3 = n2
-# while n1 >= n2:
-#     print(n2, end = ', ')
-#     n2 += n3
+n1 = int(input("숫자 입력 : "))
+n2 = int(input("배수 입력 : "))
+for i in range(n2, n1+1, n2):
+    print(i, end = ', ')
 
 #===========================================================
-# 5번 과제
+# # 5번 과제
 
-import random
+# import random
 
-for i in range(10):
-    num1to45 = list(range(1, 46, 1))
-    result = list()
-    for j in range(6):
-        rn = random.choice(num1to45)
-        result.append(rn)
-        num1to45.remove(rn)
-    print(result)  
+# for i in range(10):
+#     num1to45 = list(range(1, 46, 1))
+#     result = list()
+#     for j in range(6):
+#         rn = random.choice(num1to45)
+#         result.append(rn)
+#         num1to45.remove(rn)
+#     print(result)  
