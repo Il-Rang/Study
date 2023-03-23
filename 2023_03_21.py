@@ -89,11 +89,11 @@
 
 #=========================================================
 
-for i in range(1, 10):
-    print(f"구구단 {i}단:")
-    for j in range(1, 10):
-        print(f'{i} * {j} = {i * j}')
-    print()
+# for i in range(1, 10):
+#     print(f"구구단 {i}단:")
+#     for j in range(1, 10):
+#         print(f'{i} * {j} = {i * j}')
+#     print()
 
 #=========================================================
 
@@ -105,26 +105,27 @@ for i in range(1, 10):
 #     r += 1
 #     for i in range(1, 4):
 #         globals()['d{}'.format(i)] = scs.randbelow(7) + 1
-#         #print(globals()['d{}'.format(i)])
-#     if d1 == d2 == d3:
+#         # print(globals()['d{}'.format(i)])
+#     if (d1 == d2) and (d2 == d3):
 #         print(f'3개의 주사위는 모두 {d1}입니다.')
 #         print(f'같은 숫자가 나오기까지 {r}번 던졌습니다.')
 #         break
     
 #=========================================================
 
-# import secrets as scs
+import secrets as scs
 
-# r = 0
+r = 0
 
 # while True:
-#     r += 1
-#     num = int(input(f"{r}회 시행중 - 컴퓨터가 생각한 숫자는? "))
-#     c_num = scs.randbelow(5) + 1
-#     if num == c_num:
-#         print("맞혔습니다. 축하합니다.")
-#         break
-#     else:
-#         print(f"아쉽네요. 정답은 {c_num}이었습니다.")
+for i in range(10):
+    r += 1
+    num = int(input(f"{r}회 시행중 - 컴퓨터가 생각한 숫자는? "))
+    c_num = scs.randbelow(5) + 1
+    if num == c_num:
+        print("맞혔습니다. 축하합니다.")
+        # break
+    else:
+        print(f"아쉽네요. 정답은 {c_num}이었습니다.")
 
-# print("게임을 마칩니다.")
+print("게임을 마칩니다.")
