@@ -1,13 +1,28 @@
+# sun = 0
+# n1, n2 = 0, 0
+
+# while True :
+#     n1 = int(input("num1 → "))
+#     n2 = int(input("num1 → "))
+
+#     sun = n1 + n2
+#     print(f'{n1} + {n2} = {sum}')
+
+#=======================================================
+
 sun = 0
 n1, n2 = 0, 0
 
 while True :
     n1 = int(input("num1 → "))
+    if n1 == 0:
+        break
     n2 = int(input("num1 → "))
 
     sun = n1 + n2
     print(f'{n1} + {n2} = {sum}')
 
+print("0입 입력해서 계산을 종료합니다.")
 
 #=======================================================
 
