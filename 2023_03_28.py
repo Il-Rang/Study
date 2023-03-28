@@ -36,3 +36,7 @@ for x in range(len(numlist)):
     sum += numlist[x]
 
 print(f"리스트에 저장된 값의 합 : {sum}")
+
+f = open("03.28.list.txt", 'w', encoding = "UTF-8")
+f.write(f"리스트에 저장된 값 : {numlist}, 리스트에 저장된 값의 합 : {sum}")
+f.close()
