@@ -47,4 +47,4 @@ while left <= right:
     elif numlist[mid] < search_num:
         left = mid+1
 else:
-    print("리스트 내에 해당 값이 존재하지 않습니ㅌ다.")
+    print("리스트 내에 해당 값이 존재하지 않습니다.")
