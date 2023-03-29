@@ -43,8 +43,8 @@ while left <= right:
         print(f"{mid}번 인덱스의 값이 {search_num}입니다.")
         break
     elif numlist[mid] > search_num:
-        right = mid-1
-    elif numlist[mid] < search_num:
-        left = mid+1
+        right = mid - 1
+    else :
+        left = mid + 1
 else:
     print("리스트 내에 해당 값이 존재하지 않습니다.")
