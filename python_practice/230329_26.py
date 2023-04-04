@@ -69,4 +69,3 @@ for i in range(100):
         low = sList[i]
 print(f"16 : {sList}")
 print(f"최고 : {top} 최하 : {low} 평균 : {s_sum / 100}")
-    
