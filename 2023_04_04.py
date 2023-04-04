@@ -41,8 +41,7 @@ while True:
     fitem = input("찾을 물품 : ")
     if fitem == '':
         break
+    elif fitem in items:
+        print(f'{items[fitem]}개 남았어요.')
     else:
-        if fitem in items:
-            print(f'{items[fitem]}개 남았어요.')
-        else:
-            print('그 물품은 없어요.')
+        print('그 물품은 없어요.')
