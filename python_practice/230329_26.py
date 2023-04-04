@@ -2,7 +2,7 @@ cnt_index = 0
 sum = 0
 sum_2 = 0
 
-nList = list(range(1, 31)) # 1 ~ 30까지의 값을 지닌 리스트를 생성
+nList = list(range(1, 31))
 print(f"1 : {nList}")
 nList[0] = 1000
 print(f"2 : {nList}")
