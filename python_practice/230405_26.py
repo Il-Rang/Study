@@ -21,12 +21,14 @@ print(f'#4 : {sum}')
 for y in inst.keys():
     if min > inst[y]:
         min = inst[y]
-print(f'#5 : {min}')
+        min_item = y
+print(f'#5 : {min_item} {min}')
 
 for z in inst.keys():
     if max < inst[z]:
         max = inst[z]
-print(f'#6 : {max}')
+        max_item = z
+print(f'#6 : {max_item} {max}')
 
 import random as r
 for i in range(len(items)):
