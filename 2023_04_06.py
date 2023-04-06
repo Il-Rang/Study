@@ -39,22 +39,40 @@
 
 # res = 0
 # var1, var2, oper = 0, 0, ""
-# oper = input("계산 입력 ( +, -, * , / ) : ")
+# oper = input("계산 입력 (+, -, * , /) : ")
 # var1 = int(input("첫 번째 숫자 입력 : "))
 # var2 = int(input("두 번째 숫자 입력 : "))
 # res = calc(var1, var2, oper)
 # print(f"{var1} {oper} {var2} = {res}")
 
+# import random as r
+
+# def getnum():
+#     l = []
+#     cnt = 0
+#     while cnt < 6:
+#         rn = r.randint(1, 45)
+#         if rn not in l:
+#             l.append(rn)
+#             cnt += 1
+#     return l
+
+# lotto = getnum()
+# lotto.sort()
+# print(f"로또 번호 출력 : {lotto}")
+
 import random as r
-def getnum():
-    l = []
-    cnt = 0
-    while cnt < 6:
+
+def getnum(l):
+    while True:
         rn = r.randint(1, 45)
         if rn not in l:
-            l.append(rn)
-            cnt += 1
-    return l
-lotto = getnum()
-lotto.sort()
-print(f"로또 번호 출력 : {lotto}")
+            break
+    return rn
+
+ul = []
+for i in range(6):
+    ul.append(getnum(ul))
+
+ul.sort()
+print(f"로또 번호 출력 : {ul}")
