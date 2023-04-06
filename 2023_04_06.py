@@ -50,7 +50,7 @@ def getnum():
     l = []
     cnt = 0
     while cnt < 6:
-        rn = r.randint(1, 46)
+        rn = r.randint(1, 45)
         if rn not in l:
             l.append(rn)
             cnt += 1
