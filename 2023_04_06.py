@@ -75,4 +75,6 @@ for i in range(6):
     ul.append(getnum(ul))
 
 ul.sort()
-print(f"로또 번호 출력 : {ul}")
+print("로또 번호 출력 :", end = ' ')
+for j in ul:
+    print(j , end = ' ')
