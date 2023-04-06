@@ -58,11 +58,16 @@ print(f'#9 : 가격 리스트 : {pril}')
 # 추가 문제
 iny = int(input("열 크기 입력 : "))
 inx = int(input("행 크기 입력 : "))
+if inx >= iny:
+    xy_max = inx
+else:
+    xy_max = iny
+
 for y in range(iny):
     pcnt = y
     for x in range(inx):
         pcnt += 1
-        if pcnt > inx:
+        if pcnt > xy_max:
             pcnt = 1
         print(pcnt, end = ' ')
     print()
